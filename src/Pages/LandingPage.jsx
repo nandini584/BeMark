@@ -7,6 +7,10 @@ import { motion } from "framer-motion"
 import ProjectSummary from "../Components/LandingPage/ProjectSummary"
 import TestimonialsSummary from "../Components/LandingPage/TestimonialsSummary"
 import Liner from "../Components/LandingPage/Liner"
+import Testimonials from "../Components/LandingPage/Testimonials"
+import Expertise from "../Components/LandingPage/Expertise"
+import Mesh from "../Components/LandingPage/Mesh"
+import Footer from "../Components/LandingPage/Footer"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -42,7 +46,11 @@ const LandingPage = () => {
       <Services />
       <ProjectSummary/>
       <TestimonialsSummary/>
+      <Testimonials/>
       <Liner />
+      <Expertise/>
+      <Mesh/>
+      <Footer/>
     </div>
   )
 }
