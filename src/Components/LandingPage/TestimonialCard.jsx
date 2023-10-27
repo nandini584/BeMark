@@ -9,14 +9,14 @@ const TestimonialCard = (props) => {
             <img src={Star} alt="Rating" className="mr-3"/>
             <img src={Star} alt="Rating" className="mr-3"/>
             <img src={Star} alt="Rating" className="mr-3"/>
-            <h1 className="text-2xl font-bold text-white">{props.rating}</h1>
+            <h1 className="text-2xl font-Halenior-bold text-white">{props.rating}</h1>
         </div>
         <div>
-            <h1 className="text-[22px] font-regular text-white">{props.review}</h1>
+            <h1 className="text-[22px] font-Halenior-medium text-white">{props.review}</h1>
         </div>
         <div className="flex flex-col justify-end">
-            <h1 className="font-bold text-xl text-white justify-end">{props.reviewer}</h1>
-            <h2 className="font-medium text-lg text-white">{props.Designation}</h2>
+            <h1 className="font-Halenior-bold text-xl text-white justify-end">{props.reviewer}</h1>
+            <h2 className="font-Halenior-medium text-lg text-white">{props.Designation}</h2>
         </div>
     </motion.div>
   )

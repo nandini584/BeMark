@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+    font-family: Halenior-Bold;
+    src: url("./font/Halenoir-Bold.otf");
+}
+@font-face{
+    font-family: Halenior-semibold;
+    src: url("./font/Halenoir-DemiBold.otf");
+}
+@font-face{
+    font-family: Halenior-compact-semibold;
+    src: url("./font/HalenoirCompactText-DemiBold.otf");
+}
+@font-face{
+    font-family: Halenior-medium;
+    src: url("./font/HalenoirCompact-Medium.otf");
+}
