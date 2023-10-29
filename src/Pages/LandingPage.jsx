@@ -11,6 +11,9 @@ import Testimonials from "../Components/LandingPage/Testimonials"
 import Expertise from "../Components/LandingPage/Expertise"
 import Mesh from "../Components/LandingPage/Mesh"
 import Footer from "../Components/LandingPage/Footer"
+import PlayBoard from "../Components/LandingPage/PlayBoard"
+import ServicesExpand from "../Components/LandingPage/ServicesExpand"
+import Portfolios from "../Components/LandingPage/Portfolios"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -44,11 +47,14 @@ const LandingPage = () => {
       <Navbar />
       <HeroSection />
       <Services />
+      <Portfolios/>
       <ProjectSummary/>
       <TestimonialsSummary/>
       <Testimonials/>
       <Liner />
+      <ServicesExpand/>
       <Expertise/>
+      <PlayBoard/>
       <Mesh/>
       <Footer/>
     </div>

@@ -2,7 +2,7 @@ import Priya from "../../Images/Priya.svg"
 import RightArrow from "../../Images/RightArrow.svg"
 const Experience = () => {
   return (
-    <div className="w-[41vw] h-[50vh] bg-[#7B36FF] rounded-[45px] p-12 flex flex-col ml-20 mt-4">
+    <div className="w-[41vw] h-[50vh] bg-[#1D0B3A] rounded-[45px] p-12 flex flex-col ml-20 mt-4">
         <h1 className="text-base text-white font-Halenior-medium mb-2">Experience</h1>
         <h1 className="text-[30px] leading-tight font-Halenior-compact-semibold text-white">Our crew got tons of experience, so you know we'll come through with cool stuff and make sure our communication game is on point.</h1>
         <div className="flex flex-row items-center justify-between mt-10">

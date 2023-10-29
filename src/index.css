@@ -18,3 +18,14 @@
     font-family: Halenior-medium;
     src: url("./font/HalenoirCompact-Medium.otf");
 }
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-text {
+    display: inline-block;
+  }
+
