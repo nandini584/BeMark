@@ -14,6 +14,7 @@ export default {
         "Halenior-semibold": ["Halenior-semibold", "Halvetica"],
         "Halenior-compact-semibold": ["Halenior-compact-semibold", "Halvetica"],
         "Halenior-medium": ["Halenior-medium", "Halvetica"],
+        "Halenior-light": ["Halenior-light", "Halvetica"]
       }
   }
   },

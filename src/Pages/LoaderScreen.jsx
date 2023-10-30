@@ -10,14 +10,12 @@ const LoaderScreen = () => {
         transition={{ duration: 1.5 }}
         src={BDAsvg} 
         alt="Bemaark digital agency" 
-        className="mr-5 w-14"/>
+        className="mr-4 w-6"/>
         <motion.div className="flex flex-col"
         initial={{ opacity:0 }}
         transition={{ duration: 1, delay: 1}}
         animate={{ opacity: 1}}>
-        <TypedText text="BEMAARK" className="text-[24px] leading-tight font-Halenior-bold text-black"/>
-        <TypedText text="DIGITAL" className="text-[24px] leading-tight font-Halenior-medium text-black"/>
-        <TypedText text="AGENCY" className="text-[24px] leading-tight font-Halenior-medium text-black"/>
+        <TypedText text="bemaark" className="text-[28px] leading-tight font-Halenior-semibold text-black"/>
         </motion.div>
     </div>
   )

@@ -19,6 +19,11 @@
     src: url("./font/HalenoirCompact-Medium.otf");
 }
 
+@font-face{
+    font-family: Halenior-light;
+    src: url("./font/HalenoirCompactText-Light.otf");
+}
+
 .scroll-container {
     width: 100%;
     overflow: hidden;
@@ -29,3 +34,4 @@
     display: inline-block;
   }
 
+  

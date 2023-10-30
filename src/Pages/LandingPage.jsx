@@ -14,6 +14,7 @@ import Footer from "../Components/LandingPage/Footer"
 import PlayBoard from "../Components/LandingPage/PlayBoard"
 import ServicesExpand from "../Components/LandingPage/ServicesExpand"
 import Portfolios from "../Components/LandingPage/Portfolios"
+import DropDown from "../Components/LandingPage/DropDown"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -35,6 +36,7 @@ const LandingPage = () => {
 
   return (
     <div>
+      
       <motion.div
         style={{
           position: "fixed",
@@ -42,7 +44,7 @@ const LandingPage = () => {
           left: mousePosition.x-10
         }}
       >
-        <img src={LogoPoint} alt="Bemaark" />
+        <img src={LogoPoint} alt="Bemaark" className="z-50"/>
       </motion.div>
       <Navbar />
       <HeroSection />
