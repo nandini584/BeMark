@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import data from "../../Data/Testimonials.json"
+import RightArrowBlack from "../../Images/RightArrowBlack.svg"
 const Testimonials = () => {
   return (
     <div className="flex flex-col items-center justify-center"> {/* Center the content */}
@@ -31,6 +32,10 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="flex flex-row items-center justify-center">
+          <img src={RightArrowBlack} alt="" className="rotate-180 mr-4 w-10 mt-12" />
+          <img src={RightArrowBlack} alt="" className="w-10 mt-12" />
+        </div>
       </div>
     </div>
   );

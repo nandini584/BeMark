@@ -9,8 +9,8 @@ const Experience = () => {
             <div className="flex flex-row items-center ">
             <img src={Priya} alt="co-founder" className="mr-4 w-16"/>
             <div>
-            <h1 className="font-Halenior-bold text-white text-lg">Co-founder</h1>
-            <h1 className="font-Halenior-medium text-white text-base">Priya Gupta</h1>
+            <h1 className="font-Halenior-bold text-white text-lg">Priya Gupta</h1>
+            <h1 className="font-Halenior-medium text-white text-base">Co-founder & CMO</h1>
             </div>
             </div>
             <div className="flex flex-row items-center">

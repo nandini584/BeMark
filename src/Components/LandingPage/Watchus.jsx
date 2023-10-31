@@ -13,7 +13,7 @@ const Watchus = () => {
             </div>
             <div className="flex flex-row items-center">
                 <h1 className="text-base font-Halenior-semibold mr-4">Watch us</h1>
-                <img src={Play} alt="watch us" className="w-9 cursor-pointer" />
+                <img src={Play} alt="watch us" className="w-9 cursor-pointer"/>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 import { TypedText } from "../Components/LandingPage/Animations/TypedText"
 import BDAsvg from "../Images/BDA.svg"
 import {motion} from "framer-motion"
+import Transition from "../Components/LandingPage/Animations/TransitionHome"
 const LoaderScreen = () => {
   return (
     <div className="flex flex-row items-center justify-center h-[100vh] ">
@@ -21,4 +22,4 @@ const LoaderScreen = () => {
   )
 }
 
-export default LoaderScreen
+export default Transition(LoaderScreen)

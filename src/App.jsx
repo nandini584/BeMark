@@ -5,21 +5,30 @@ import Expertise from "./Pages/Expertise"
 import Culture from "./Pages/Culture"
 import Feed from "./Pages/Feed"
 import Connect from "./Pages/Connect"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { AnimatePresence } from "framer-motion"
+import { Routes, Route, useLocation } from "react-router-dom"
+import TransitionPlay from "./Components/LandingPage/Animations/TransitionPlay"
 const App = () => {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<LandingPage/>}></Route>
-      <Route path='/loader' element={<LoaderScreen/>}></Route>
-      <Route path='/portfolio' element={<Portfolio/>}></Route>
-      <Route path='/expertise' element={<Expertise/>}></Route>
-      <Route path='/culture' element={<Culture/>}></Route>
-      <Route path='/feed' element={<Feed/>}></Route>
-      <Route path='/connect' element={<Connect/>}></Route>
-    </Routes>
-    </BrowserRouter>
-  )
-}
+    <>
+      <AnimatePresence mode="wait">
+        <Routes location={location}>
+          <Route path="/landingpage" element={<LandingPage />} />
+          <Route
+            path="/"
+            element={<TransitionPlay />}
+            exit={{ scaleY: 0 }} 
+          />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/expertise" element={<Expertise />} />
+          <Route path="/culture" element={<Culture />} />
+          <Route path="/feed" element={<Feed />} />
+          <Route path="/connect" element={<Connect />} />
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
+};
 
 export default App

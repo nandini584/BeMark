@@ -18,7 +18,10 @@ export function TypedText({
 }) {
   return (
     <Wrapper className={className}>
-      <span className="sr-only">{text}</span>
+      <motion.span 
+      initial={{color:"white"}}
+      animate={{color:"white"}}
+      className="sr-only">{text}</motion.span>
       <motion.span
         initial="hidden"
         animate="visible"

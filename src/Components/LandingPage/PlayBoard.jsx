@@ -17,16 +17,18 @@ import Arrow5 from "../../Images/Playboard/Arrow5.svg"
 import {motion} from "framer-motion"
 import DropDown from "./DropDown"
 const PlayBoard = () => {
+
   return (
+    <>
       <motion.div 
       initial={{borderRadius:0}}
-      whileInView={{borderRadius:40}}
+      whileInView={{borderRadius:40, marginLeft:30, marginRight: 30}}
       transition={{duration:1.5}}
       className="h-[110vh] bg-[#7B36FF] flex flex-col items-center mt-20">
-        <div className="relative top-32 right-[500px] z-10 w-24">
+        <div className="relative top-32 right-[500px] w-24">
           <DropDown src={Img1} src2={Maria} name="Maria Stanley" content="Sometimes you just have to look at <br/> the big picture, and by that, I mean <br/> the office poster that says ‘Success is <br/> a journey, not a destination.’ That’s what <br/> I tell myself every time I accidentally <br/> delete a spreadsheet."/>
         </div>
-        <div className="relative top-[420px] right-[382px] z-10 w-24">
+        <div className="relative top-[420px] right-[382px] w-24">
           <DropDown src={Img2} src2={Sydney} name="Sydney Brilkova" content="A chief design officer, <br/> Art directing with glee,Until clients say, <br/> “No.”"/>
         </div>
         <div className="relative top-24 left-[380px] z-10 w-24">
@@ -41,6 +43,7 @@ const PlayBoard = () => {
         <motion.div
          animate={{ x: [0, 100, 0, 50, -200, 0, 0], y:[0, 50, 0, -100, -100, 100, 0] }}
          transition={{ duration: 30, repeat: Infinity }}
+         style={{zIndex:100}}
         >
         <div>
       <img
@@ -53,6 +56,7 @@ const PlayBoard = () => {
         <motion.div
       animate={{ x: [0, 50, 0, 25, -100, 0, 0], y:[0, 25, 0, -50, -50, 50, 0] }}
       transition={{ duration: 20, repeat: Infinity }}
+      style={{zIndex:100}}
     >
         <div>
       <img
@@ -65,6 +69,7 @@ const PlayBoard = () => {
     <motion.div
       animate={{ x: [0, 0, -200, 50, 0, 100, 0], y:[0, 100, -100, -100, 0, 50, 0] }}
       transition={{ duration: 30, repeat: Infinity }}
+      style={{zIndex:100}}
     >
         <div>
       <img
@@ -77,6 +82,7 @@ const PlayBoard = () => {
     <motion.div
       animate={{ x: [0, 0, -100, 25, 0, 50, 0], y:[0, 50, -50, -50, 0, 25, 0] }}
       transition={{ duration: 30, repeat: Infinity }}
+      style={{zIndex:100}}
     >
         <div>
       <img
@@ -89,6 +95,7 @@ const PlayBoard = () => {
     <motion.div
       animate={{ x: [0, 0, -50, 12, 0, 25, 0], y:[0, 25, -25, -25, 0, 12, 0] }}
       transition={{ duration: 30, repeat: Infinity }}
+      style={{zIndex:100}}
     >
         <div>
       <img
@@ -105,6 +112,7 @@ const PlayBoard = () => {
         <h1 className="font-Halenior-medium text-lg text-center text-white w-[50vw] mt-10">... or explore further</h1>
         <img src={DownArrow} alt="explore" className="mt-4 w-9" />
     </motion.div>
+    </>
   )
 }
 

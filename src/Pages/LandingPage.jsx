@@ -15,6 +15,7 @@ import PlayBoard from "../Components/LandingPage/PlayBoard"
 import ServicesExpand from "../Components/LandingPage/ServicesExpand"
 import Portfolios from "../Components/LandingPage/Portfolios"
 import DropDown from "../Components/LandingPage/DropDown"
+import Video from "../Components/LandingPage/Video"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -41,7 +42,7 @@ const LandingPage = () => {
         style={{
           position: "fixed",
           top: mousePosition.y-15,
-          left: mousePosition.x-10
+          left: mousePosition.x-10,
         }}
       >
         <img src={LogoPoint} alt="Bemaark" className="z-50"/>
@@ -49,6 +50,7 @@ const LandingPage = () => {
       <Navbar />
       <HeroSection />
       <Services />
+      <Video/>
       <Portfolios/>
       <ProjectSummary/>
       <TestimonialsSummary/>
