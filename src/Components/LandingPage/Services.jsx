@@ -21,24 +21,24 @@ function Services() {
         <Marquee>
           <MarqueeGroup>
             {row1.map((el,i) => (
-              <h1 key={i} className="text-xl text-[#1D0B3A] bg-[#FAF7FF] font-Halenior-medium mr-9 flex flex-col items-center justify-center mb-8 px-5 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row1.map((el, i) => (
-              <h1 key={i} className="text-xl text-[#1D0B3A] bg-[#FAF7FF] font-Halenior-medium mr-9 flex flex-col items-center justify-center mb-8 px-5 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup>
         </Marquee>
         <Marquee>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-             <h1 key={i} className="text-xl text-[#1D0B3A] bg-[#FAF7FF] font-Halenior-medium mr-9 flex flex-col items-center justify-center mb-8 px-5 rounded-full py-5">{el}</h1>
+             <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-              <h1 key={i} className="text-xl text-[#1D0B3A] bg-[#FAF7FF] font-Halenior-medium mr-9 flex flex-col items-center justify-center mb-8 px-5 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
         </Marquee>
@@ -64,7 +64,6 @@ const AppContainer = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   height: fit-content;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +72,7 @@ const Wrapper = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 1400px;
+  width: 100vw;
   overflow: hidden;
   user-select: none;
 

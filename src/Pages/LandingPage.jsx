@@ -14,8 +14,8 @@ import Footer from "../Components/LandingPage/Footer"
 import PlayBoard from "../Components/LandingPage/PlayBoard"
 import ServicesExpand from "../Components/LandingPage/ServicesExpand"
 import Portfolios from "../Components/LandingPage/Portfolios"
-import DropDown from "../Components/LandingPage/DropDown"
 import Video from "../Components/LandingPage/Video"
+import ClientLogo from "../Components/LandingPage/ClientLogo"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -55,6 +55,7 @@ const LandingPage = () => {
       <ProjectSummary/>
       <TestimonialsSummary/>
       <Testimonials/>
+      <ClientLogo/>
       <Liner />
       <ServicesExpand/>
       <Expertise/>
