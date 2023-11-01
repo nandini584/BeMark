@@ -76,3 +76,12 @@
     text-transform: uppercase;
   }
   
+  .main-text{
+    background-color: white;
+    overflow:hidden;
+  }
+
+  .our-text{
+    display:inline-block;
+    transform: translateY(100%)
+  }

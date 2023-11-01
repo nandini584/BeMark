@@ -7,17 +7,16 @@ import Feed from "./Pages/Feed"
 import Connect from "./Pages/Connect"
 import { AnimatePresence } from "framer-motion"
 import { Routes, Route, useLocation } from "react-router-dom"
-import TransitionPlay from "./Components/LandingPage/Animations/TransitionPlay"
 const App = () => {
   const location = useLocation();
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <Routes location={location}>
-          <Route path="/landingpage" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage />} />
           <Route
-            path="/"
-            element={<TransitionPlay />}
+            path="/loader"
+            element={<LoaderScreen />}
             exit={{ scaleY: 0 }} 
           />
           <Route path="/portfolio" element={<Portfolio />} />

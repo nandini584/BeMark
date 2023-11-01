@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'hero': "url('../src/Images/Mesh.svg')",
+        'project' : "url('../src/Images/MeshProject.svg')"
       },
       fontFamily:{
         "Halenior-bold": ["Halenior-bold", "Halvetica"],

@@ -37,7 +37,13 @@ const LandingPage = () => {
 
   return (
     <div>
-      
+      {/* <motion.div
+      initial={{ y: "100%" }}
+    animate={{ y: "0%" }}
+    transition={{ duration: 0.75, ease: "easeOut" }}
+    exit={{ opacity: 1 }}
+    className="absolute top-0 left-0 w-full h-full "
+  > */}
       <motion.div
         style={{
           position: "fixed",
@@ -51,8 +57,8 @@ const LandingPage = () => {
       <HeroSection />
       <Services />
       <Video/>
-      <Portfolios/>
       <ProjectSummary/>
+      <Portfolios/>
       <TestimonialsSummary/>
       <Testimonials/>
       <ClientLogo/>
@@ -62,6 +68,8 @@ const LandingPage = () => {
       <PlayBoard/>
       <Mesh/>
       <Footer/>
+    {/* </motion.div> */}
+    
     </div>
   )
 }

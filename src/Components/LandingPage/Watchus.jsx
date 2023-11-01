@@ -1,10 +1,34 @@
 import Amit from "../../Images/Amit.svg"
 import Priya from "../../Images/Priya.svg"
 import Play from "../../Images/Play.svg"
+import { useEffect, useRef } from "react"
+import gsap from 'gsap'
+import SplitType from 'split-type'
 const Watchus = () => {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const ourText = new SplitType(textRef.current, { types: 'chars' });
+    const chars = ourText.chars;
+
+    gsap.fromTo(
+      chars,
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        duration: 0.5,
+        ease: 'power4.out',
+      }
+    );
+  }, []);
+
   return (
     <div className="flex flex-col w-[28vw]">
-        {/* <h1 className="text-2xl font-bold mb-4">Welcome to <span className="text-[#7B36FF]">Bemaark</span></h1> */}
         <h1 className="text-2xl font-Halenior-medium leading-none tracking-tight mb-8">Revolutionizing creativity, design, and innovation, empowering entrepreneurs with accessible, purpose-driven solutions. Join us in this transformative creative journey.</h1>
         <div className="flex flex-row items-center justify-between">
             <div className="flex flex-row items-center">

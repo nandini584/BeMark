@@ -9,19 +9,19 @@ const Portfolios = () => {
   return (
     <div className='w-[100vw] h-[100vh]'>
       <HorizontalScroll reverseScroll={true}>
-        <div className='w-[80vw] h-[100vh] flex flex-col item-center justify-center'>
+        <div className='w-[80vw] flex flex-col item-center justify-center'>
           <img src={Billboard} alt="" />
         </div>
-        <div className='w-[80vw] h-[100vh] flex flex-col item-center justify-center'>
+        <div className='w-[80vw] flex flex-col item-center justify-center'>
           <img src={Packaging} alt="" />
         </div>
-        <div className='w-[80vw] h-[100vh] flex flex-col item-center justify-center'>
+        <div className='w-[80vw] flex flex-col item-center justify-center'>
           <img src={PrintDesign} alt=""/>
         </div>
-        <div className='w-[80vw] h-[100vh] flex flex-col item-center justify-center'>
+        <div className='w-[80vw] flex flex-col item-center justify-center'>
           <img src={Stationery} alt="" />
         </div>
-        <div className='w-[80vw] h-[100vh] flex flex-col item-center justify-center'>
+        <div className='w-[80vw] flex flex-col item-center justify-center'>
           <img src={WebWork} alt="" />
         </div>
         <div className='w-[25vw] h-[100vh] flex flex-col items-center justify-center'>

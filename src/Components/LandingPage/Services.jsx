@@ -33,12 +33,12 @@ function Services() {
         <Marquee>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-             <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
+             <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
         </Marquee>
@@ -51,14 +51,14 @@ export default Services;
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   color: #000000;
 
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+ 
 `;
 
 const Wrapper = styled.div`

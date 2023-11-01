@@ -31,7 +31,7 @@ const PlayBoard = () => {
         <div className="relative top-[420px] right-[382px] w-24">
           <DropDown src={Img2} src2={Sydney} name="Sydney Brilkova" content="A chief design officer, <br/> Art directing with glee,Until clients say, <br/> “No.”"/>
         </div>
-        <div className="relative top-24 left-[380px] z-10 w-24">
+        <div className="relative top-24 left-[480px] z-10 w-24">
           <DropDown src={Img4} src2={Lily} name="Lily Christine" content="Lily, a chill project manager, strolls <br/> around with a notepad and phone. <br/> <br/> Lily: Hey guys, what’s the word? <br/> Maria, Website? <br/> Maria: Looking sharp! <br/> Lily: Chris, dev? <br/> Chris: Poppin’ off! <br/> BOSS Sydney enters. <br/> Sydney: How’s it hangin? <br/> Lily: All good in the sister hood! I’m feeling <br/> the smell of the release from the hall. They all high-five and Lily wakes up. "/>
         </div>
         <div className="relative top-[320px] left-[496px] z-10 w-24">
@@ -105,8 +105,8 @@ const PlayBoard = () => {
       />
         </div>
     </motion.div>
-        <h1 className="font-Halenior-medium text-8xl text-center text-white w-[50vw] mt-[-470px]">What’s going on behind the scene? See yourself!</h1>
-        <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw] mt-40">This is a ... board.</h1>
+        <h1 className="font-Halenior-medium text-8xl text-center text-white w-[65vw] mt-[-470px]">Together, delivering exceptional results through creative minds.</h1>
+        <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw] mt-32">This is a ... board.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">You can click on our comments and read them.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">Yeah, that’s all.</h1>
         <h1 className="font-Halenior-medium text-lg text-center text-white w-[50vw] mt-10">... or explore further</h1>
