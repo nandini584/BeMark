@@ -1,44 +1,106 @@
 import DownArrow from "../../Images/DownArrow.svg"
-import Img1 from "../../Images/Playboard/Img1.svg"
-import Img2 from "../../Images/Playboard/Img2.svg"
-import Img3 from "../../Images/Playboard/Img3.svg"
-import Img4 from "../../Images/Playboard/Img4.svg"
-import Img5 from "../../Images/Playboard/Img5.svg"
-import Maria from "../../Images/Playboard/Maria.svg"
-import John from "../../Images/Playboard/John.svg"
-import Chris from "../../Images/Playboard/Chris.svg"
-import Lily from "../../Images/Playboard/Lily.svg"
-import Sydney from "../../Images/Playboard/Sydney.svg"
-import Arrow1 from "../../Images/Playboard/Arrow1.svg"
-import Arrow2 from "../../Images/Playboard/Arrow2.svg"
-import Arrow3 from "../../Images/Playboard/Arrow3.svg"
-import Arrow4 from "../../Images/Playboard/Arrow4.svg"
-import Arrow5 from "../../Images/Playboard/Arrow5.svg"
+import NandiniArrow from "../../Images/Playboard/NandiniArrow.svg"
+import PriyaArrow from "../../Images/Playboard/PriyaArrow.svg"
+import SatyarishiArrow from "../../Images/Playboard/SatyarishiArrow.svg"
+import Amit from "../../Images/Playboard/AmitPlay.svg"
+import Nandini from "../../Images/Playboard/NandiniPlay.svg"
+import Priya from "../../Images/Playboard/PriyaPlay.svg"
+import PriyaImg from "../../Images/Priya.svg"
+import AmitImg from "../../Images/Amit.svg"
+import NandiniImg from "../../Images/Nandini.jpeg"
 import {motion} from "framer-motion"
 import DropDown from "./DropDown"
 const PlayBoard = () => {
 
   return (
-    <>
+    <div>
+      <div className="inline-block md:hidden h-[100vh] bg-[#7B36FF] w-[100vw] mt-14 py-20 px-6">
+      <div>
+      <img
+        src={NandiniArrow}
+        alt=""
+        className="w-12 z-20 relative top-[-52px] left-[-10px]"
+      />
+        </div>
+      <div>
+      <img
+        src={SatyarishiArrow}
+        alt=""
+        className="w-16 z-20 relative top-40 left-28"
+      />
+        </div>
+      <div>
+      <img
+        src={PriyaArrow}
+        alt=""
+        className="w-12 z-20 relative top-8 left-56"
+      />
+        </div>
+      <div>
+      <img
+        src={PriyaArrow}
+        alt=""
+        className="w-12 z-20 relative top-72 left-4"
+      />
+        </div>
+      <div>
+      <img
+        src={SatyarishiArrow}
+        alt=""
+        className="w-12 z-20 relative top-32 left-[240px]"
+      />
+      <img
+        src={Amit}
+        alt=""
+        className="w-10 z-20 relative top-[-215px] left-56"
+      />
+      <img
+        src={Nandini}
+        alt=""
+        className="w-10 z-20 relative top-[-80px] left-8"
+      />
+      <img
+        src={Priya}
+        alt=""
+        className="w-10 z-20 relative top-[-64px] left-[240px]"
+      />
+      <img
+        src={Amit}
+        alt=""
+        className="w-10 z-20 relative top-[-30px] left-[-10px]"
+      />
+      <img
+        src={Priya}
+        alt=""
+        className="w-10 z-20 relative top-28 left-52"
+      />
+        </div>
+      <h1 className="font-Halenior-semibold text-[25px] text-center text-white mt-[-360px]">Together, delivering exceptional results through creative minds.</h1>
+        <h1 className="font-Halenior-regular text-sm text-center text-white pt-52">Meet our creative team.</h1>
+        <h1 className="font-Halenior-regular text-sm text-center text-white ">Open it from the desktop to be fully amazed!</h1>
+        <h1 className="font-Halenior-regular text-sm text-center text-white pt-8">... or explore further</h1>
+      </div>
+   
+    <div className="hidden md:block">
       <motion.div 
       initial={{borderRadius:0}}
       whileInView={{borderRadius:40, marginLeft:30, marginRight: 30}}
       transition={{duration:1.5}}
       className="h-[110vh] bg-[#7B36FF] flex flex-col items-center mt-20">
         <div className="relative top-32 right-[500px] w-24">
-          <DropDown src={Img1} src2={Maria} name="Maria Stanley" content="Sometimes you just have to look at <br/> the big picture, and by that, I mean <br/> the office poster that says ‘Success is <br/> a journey, not a destination.’ That’s what <br/> I tell myself every time I accidentally <br/> delete a spreadsheet."/>
+          <DropDown src={Amit} src2={AmitImg} name="Satyarishi" content="Sometimes you just have to look at <br/> the big picture, and by that, I mean <br/> the office poster that says ‘Success is <br/> a journey, not a destination.’ That’s what <br/> I tell myself every time I accidentally <br/> delete a spreadsheet."/>
         </div>
         <div className="relative top-[420px] right-[382px] w-24">
-          <DropDown src={Img2} src2={Sydney} name="Sydney Brilkova" content="A chief design officer, <br/> Art directing with glee,Until clients say, <br/> “No.”"/>
+          <DropDown src={Nandini} src2={NandiniImg} name="Nandini Arora" content="A chief design officer, <br/> Art directing with glee, Until clients say, <br/> “No.”"/>
         </div>
         <div className="relative top-24 left-[480px] z-10 w-24">
-          <DropDown src={Img4} src2={Lily} name="Lily Christine" content="Lily, a chill project manager, strolls <br/> around with a notepad and phone. <br/> <br/> Lily: Hey guys, what’s the word? <br/> Maria, Website? <br/> Maria: Looking sharp! <br/> Lily: Chris, dev? <br/> Chris: Poppin’ off! <br/> BOSS Sydney enters. <br/> Sydney: How’s it hangin? <br/> Lily: All good in the sister hood! I’m feeling <br/> the smell of the release from the hall. They all high-five and Lily wakes up. "/>
+          <DropDown src={Priya} src2={PriyaImg} name="Priya Gupta" content="Priya, a chill project manager, strolls <br/> around with a notepad and phone. <br/> <br/> Priya: Hey guys, what’s the word? <br/> Satyarishi, Website? <br/> Satyarishi: Looking sharp! <br/> Priya: Nandini, dev? <br/> Nandini: Poppin’ off! <br/> BOSS Sydney enters. <br/> Sydney: How’s it hangin? <br/> Priya: All good in the sister hood! I’m feeling <br/> the smell of the release from the hall. They all high-five and Priya wakes up. "/>
         </div>
         <div className="relative top-[320px] left-[496px] z-10 w-24">
-          <DropDown src={Img3} src2={John} name="Chris Martinova" content="When clients say ‘make it pop’  <br/>  I take a breath, and then I stop  <br/> Do they want it big, bright, or bold? <br/>  I wish their instructions weren’t so cold <br/>   <br/> But I’ll add some sparkle, a dash of pizazz <br/>  And hope they like it, no need for jazz  <br/> So ‘make it pop’ they always say  <br/> I’ll do my best, come what may!"/>
+          <DropDown src={Amit} src2={AmitImg} name="Satyarishi" content="When clients say ‘make it pop’  <br/>  I take a breath, and then I stop  <br/> Do they want it big, bright, or bold? <br/>  I wish their instructions weren’t so cold <br/>   <br/> But I’ll add some sparkle, a dash of pizazz <br/>  And hope they like it, no need for jazz  <br/> So ‘make it pop’ they always say  <br/> I’ll do my best, come what may!"/>
         </div>
         <div className="relative top-32 left-[200px] z-10 w-24">
-          <DropDown src={Img5} src2={Chris} name="John Savoshevich" content="function singSong() { const lyrics = [ “Some <br/> code got the real problems”, <br/> “Some code out of luck”, <br/> “Some code think I can solve them”, <br/> “Lord debugger above”, <br/> “”, <br/> “I’m only a developer, after all”, <br/> “I’m only a developer, after all”, <br/> “Don’t put your bugs on me”, <br/> “Don’t put your bugs on me”, <br/> “”, <br/> “I’m only a human, I make mistakes”, <br/> “I’m only a human, that’s all it takes”, <br/> “To create some bugs in code”, <br/> “Don’t put your bugs on me”, <br/> “”, <br/> “I’m no code wizard or magician”, <br/> “Should go looking somewhere indocumentation”, <br/> “I’m only a developer after all”, <br/> “I’m only a developer after all”, <br/> “Don’t put your bugs on me”, <br/> “Don’t put your bugs on me” <br/> ];"/>
+          <DropDown src={Priya} src2={PriyaImg} name="Priya Gupta" content="function singSong() { const lyrics = [ “Some <br/> code got the real problems”, <br/> “Some code out of luck”, <br/> “Some code think I can solve them”, <br/> “Lord debugger above”, <br/> “”, <br/> “I’m only a developer, after all”, <br/> “I’m only a developer, after all”, <br/> “Don’t put your bugs on me”, <br/> “Don’t put your bugs on me”, <br/> “”, <br/> “I’m only a human, I make mistakes”, <br/> “I’m only a human, that’s all it takes”, <br/> “To create some bugs in code”, <br/> “Don’t put your bugs on me”, <br/> “”, <br/> “I’m no code wizard or magician”, <br/> “Should go looking somewhere indocumentation”, <br/> “I’m only a developer after all”, <br/> “I’m only a developer after all”, <br/> “Don’t put your bugs on me”, <br/> “Don’t put your bugs on me” <br/> ];"/>
         </div>
         <motion.div
          animate={{ x: [0, 100, 0, 50, -200, 0, 0], y:[0, 50, 0, -100, -100, 100, 0] }}
@@ -47,9 +109,9 @@ const PlayBoard = () => {
         >
         <div>
       <img
-        src={Arrow1}
+        src={SatyarishiArrow}
         alt=""
-        className="w-16 z-20 relative bottom-32 left-10"
+        className="w-24 z-20 relative bottom-32 left-10"
       />
         </div>
     </motion.div>
@@ -60,7 +122,7 @@ const PlayBoard = () => {
     >
         <div>
       <img
-        src={Arrow2}
+        src={PriyaArrow}
         alt=""
         className="w-16 z-20 relative bottom-12 right-48"
       />
@@ -73,9 +135,9 @@ const PlayBoard = () => {
     >
         <div>
       <img
-        src={Arrow3}
+        src={NandiniArrow}
         alt=""
-        className="w-16 z-20 relative top-24 right-64"
+        className="w-20 z-20 relative top-24 right-64"
       />
         </div>
     </motion.div>
@@ -86,9 +148,9 @@ const PlayBoard = () => {
     >
         <div>
       <img
-        src={Arrow4}
+        src={SatyarishiArrow}
         alt=""
-        className="w-16 z-20 relative left-80 bottom-10"
+        className="w-24 z-20 relative left-80 bottom-10"
       />
         </div>
     </motion.div>
@@ -99,20 +161,21 @@ const PlayBoard = () => {
     >
         <div>
       <img
-        src={Arrow5}
+        src={PriyaArrow}
         alt=""
         className="w-16 z-20 relative bottom-64 right-[550px]"
       />
         </div>
     </motion.div>
-        <h1 className="font-Halenior-medium text-8xl text-center text-white w-[65vw] mt-[-470px]">Together, delivering exceptional results through creative minds.</h1>
+        <h1 className="font-Halenior-medium text-8xl text-center text-white w-[65vw] mt-[-490px]">Together, delivering exceptional results through creative minds.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw] mt-32">This is a ... board.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">You can click on our comments and read them.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">Yeah, that’s all.</h1>
         <h1 className="font-Halenior-medium text-lg text-center text-white w-[50vw] mt-10">... or explore further</h1>
         <img src={DownArrow} alt="explore" className="mt-4 w-9" />
     </motion.div>
-    </>
+    </div>
+    </div>
   )
 }
 

@@ -16,6 +16,8 @@ import ServicesExpand from "../Components/LandingPage/ServicesExpand"
 import Portfolios from "../Components/LandingPage/Portfolios"
 import Video from "../Components/LandingPage/Video"
 import ClientLogo from "../Components/LandingPage/ClientLogo"
+import Bemaarkculture from "../Components/LandingPage/Bemaarkculture"
+import Parallax from "../Components/LandingPage/ParallaxScroll/Parallax"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -44,7 +46,7 @@ const LandingPage = () => {
     exit={{ opacity: 1 }}
     className="absolute top-0 left-0 w-full h-full "
   > */}
-      <motion.div
+      {/* <motion.div
         style={{
           position: "fixed",
           top: mousePosition.y-15,
@@ -52,20 +54,26 @@ const LandingPage = () => {
         }}
       >
         <img src={LogoPoint} alt="Bemaark" className="z-50"/>
-      </motion.div>
+      </motion.div> */}
       <Navbar />
       <HeroSection />
-      <Services />
+      <div className="md:hidden block">
       <Video/>
+      </div>
+
+      <div className="hidden md:block">
+      <Parallax/>
+      </div>
       <ProjectSummary/>
       <Portfolios/>
       <TestimonialsSummary/>
       <Testimonials/>
       <ClientLogo/>
-      <Liner />
+      {/* <Liner /> */}
       <ServicesExpand/>
       <Expertise/>
       <PlayBoard/>
+      <Bemaarkculture/>
       <Mesh/>
       <Footer/>
     {/* </motion.div> */}

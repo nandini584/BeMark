@@ -24,6 +24,9 @@
     src: url("./font/HalenoirCompactText-Light.otf");
 }
 
+*{
+  
+}
 .scroll-container {
     width: 100%;
     overflow: hidden;
@@ -34,6 +37,10 @@
     display: inline-block;
   }
 
+  .relative {
+    max-height: 120vh;
+  }
+  
 .slide-in{
     position: fixed;
     top:0;
@@ -85,3 +92,19 @@
     display:inline-block;
     transform: translateY(100%)
   }
+
+  .cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode:difference;
+  }
+
+.cursormove:hover ~ .cursor
+{
+  transform: translate(-50%, -50%);
+}

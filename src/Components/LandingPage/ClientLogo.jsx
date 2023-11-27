@@ -10,6 +10,7 @@ import Logo8 from "../../Images/Client logo/Logo-18 1.svg"
 import Logo9 from "../../Images/Client logo/Logo-19 1.svg"
 import Logo10 from "../../Images/Client logo/Logo-20 1.svg"
 import Logo11 from "../../Images/Client logo/Logo-21 1.svg"
+import { AltClients } from "./AltClients";
 const ClientLogo = () => {
     const row1 = [
       Logo1,
@@ -28,34 +29,41 @@ const ClientLogo = () => {
       
     ]
   return (
+    <div>
+      <div className="md:hidden flex flex-col ">
+        <AltClients/>
+      </div>
+    <div className="hidden md:block">
     <AppContainer>
         <Wrapper>
             <Marquee>
                 <MarqueeGroup>
                     {row1.map((logo, i) => (
-                        <img src={logo} key={i} alt="client_logos" className="w-[306px] border-l-2 border-b-2 border-[#1D0B3A] px-16 pb-8"/>
+                        <img src={logo} key={i} alt="client_logos" className="w-[306px] px-8 pb-8"/>
                         ))}
                 </MarqueeGroup>
                 <MarqueeGroup>
                     {row1.map((logo, i) => (
-                        <img src={logo} key={i} alt="client_logos" className="w-[306px] border-l-2 border-b-2 border-[#1D0B3A] px-16 pb-8"/>
+                        <img src={logo} key={i} alt="client_logos" className="w-[306px] px-16 pb-8"/>
                         ))}
                 </MarqueeGroup>
             </Marquee>
             <Marquee>
                 <MarqueeGroup2>
                 {row2.map((logo, i) => (
-                        <img src={logo} key={i} alt="client_logos" className="w-[306px] border-l-2 border-b-2 border-[#1D0B3A] px-16 pb-8"/>
+                        <img src={logo} key={i} alt="client_logos" className="w-[306px] px-16 pb-8"/>
                         ))}
                 </MarqueeGroup2>
                 <MarqueeGroup2>
                 {row2.map((logo, i) => (
-                        <img src={logo} key={i} alt="client_logos" className="w-[306px] border-l-2 border-b-2 border-[#1D0B3A] px-16 pb-8"/>
+                        <img src={logo} key={i} alt="client_logos" className="w-[306px] px-16 pb-8"/>
                         ))}
                 </MarqueeGroup2>
             </Marquee>
         </Wrapper>
     </AppContainer>
+    </div>
+    </div>
   )
 }
 

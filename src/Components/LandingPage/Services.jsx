@@ -51,7 +51,7 @@ export default Services;
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   color: #000000;
 
   position: relative;

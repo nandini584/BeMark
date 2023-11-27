@@ -1,10 +1,18 @@
-import Videobg from "../../Video/bemaarkvid.mp4"
+import React from 'react';
+import Videobg from '../../Video/bemaarkvid.mp4';
+
 const Video = () => {
   return (
-    <div className="">
-      <video src={Videobg} autoPlay loop muted />
+    <div>
+      <video
+        src={Videobg}
+        className='mt-28'
+        autoPlay
+        loop
+        muted
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Video
+export default Video;

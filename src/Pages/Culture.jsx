@@ -1,6 +1,11 @@
+import React from 'react'
+import Parallax from '../Components/LandingPage/ParallaxScroll/Parallax'
+
 const Culture = () => {
   return (
-    <div>Culture</div>
+    <div>
+      <Parallax/>
+    </div>
   )
 }
 
