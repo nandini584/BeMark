@@ -3,7 +3,7 @@ import Videobg from '../../Video/bemaarkvid.mp4';
 
 const Video = () => {
   return (
-    <div>
+    <div className='bg-white'>
       <video
         src={Videobg}
         className='mt-28'

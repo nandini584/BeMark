@@ -18,6 +18,7 @@ import Video from "../Components/LandingPage/Video"
 import ClientLogo from "../Components/LandingPage/ClientLogo"
 import Bemaarkculture from "../Components/LandingPage/Bemaarkculture"
 import Parallax from "../Components/LandingPage/ParallaxScroll/Parallax"
+import Canvas from "../Components/LandingPage/Canvas"
 const LandingPage = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -38,14 +39,14 @@ const LandingPage = () => {
   }, [])
 
   return (
-    <div>
-      {/* <motion.div
+    <div className="bg-white">  
+      <motion.div
       initial={{ y: "100%" }}
     animate={{ y: "0%" }}
-    transition={{ duration: 0.75, ease: "easeOut" }}
+    transition={{ duration: 0.95 }}
     exit={{ opacity: 1 }}
     className="absolute top-0 left-0 w-full h-full "
-  > */}
+  >
       {/* <motion.div
         style={{
           position: "fixed",
@@ -57,13 +58,17 @@ const LandingPage = () => {
       </motion.div> */}
       <Navbar />
       <HeroSection />
-      <div className="md:hidden block">
-      <Video/>
-      </div>
-
+      {/* <div className="md:hidden block">
+      </div> */}
       <div className="hidden md:block">
-      <Parallax/>
+
+      <Services/>
       </div>
+      <Video/>
+
+      {/* <div className="hidden md:block">
+      <Parallax/>
+      </div> */}
       <ProjectSummary/>
       <Portfolios/>
       <TestimonialsSummary/>
@@ -73,10 +78,17 @@ const LandingPage = () => {
       <ServicesExpand/>
       <Expertise/>
       <PlayBoard/>
+      <div className="block md:hidden">
+
       <Bemaarkculture/>
+      </div>
+      <div className="hidden md:block">
+
+      <Canvas/>
+      </div>
       <Mesh/>
       <Footer/>
-    {/* </motion.div> */}
+    </motion.div>
     
     </div>
   )

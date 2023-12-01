@@ -2,7 +2,7 @@ import Star from "../../Images/Star.svg"
 import {motion} from "framer-motion"
 const TestimonialCard = (props) => {
   return (
-    <motion.div className="md:w-[30vw] w-[92vw] md:h-[80vh] h-[85vh] bg-[#F4EFFF] mt-20 md:mt-0 flex justify-between flex-col md:px-9 px-6 md:py-12 py-8 rounded-[32px] md:mx-0 mx-4" whileHover={{scale:0.97}} transition={{duration:0.5}} >
+    <motion.div className="md:w-[30vw] w-[92vw] md:h-[80vh] h-[80vh] bg-[#F4EFFF] mt-12 md:mt-0 flex justify-between flex-col md:px-9 px-6 md:py-12 py-8 rounded-[32px] md:mx-0 mx-4" whileHover={{scale:0.97}} transition={{duration:0.5}} >
         <div className="flex flex-row items-center">
             <img src={Star} alt="Rating" className="mr-3"/>
             <img src={Star} alt="Rating" className="mr-3"/>

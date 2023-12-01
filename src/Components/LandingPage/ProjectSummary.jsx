@@ -1,5 +1,15 @@
-import Mesh from "../../Images/MeshProject.svg"
+import { useEffect } from 'react';
+import gsap from 'gsap';
 const ProjectSummary = () => {
+  useEffect(() => {
+    const t1 = gsap.timeline({ defaults: { ease: 'SlowMo.easeOut' } });
+    t1.to('.our-text', {
+      y: '0%',
+      duration: 0.7,
+      stagger: 0.4,
+    });
+  }, []);
+  
   return (
     <div className="bg-project flex md:flex-row flex-col md:items-center justify-between md:px-[40px] lg:py-[90px] py-[60px]">
         <div className="flex flex-col items-start justify-between">

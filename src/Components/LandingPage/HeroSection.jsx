@@ -28,11 +28,11 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="">
-          <div className="cursormove flex flex-col justify-between sm:flex-row h-[60vh] md:h-[80vh] px-4 sm:px-[40px] pt-12 relative">
-      <div className="w-full sm:w-[55vw]">
+    <div className="bg-white">
+          <div className="cursormove flex flex-col justify-between sm:flex-row h-[60vh] md:h-[80vh] px-4 sm:px-[40px] pt-6 relative bg-white">
+      <div className="w-full sm:w-[55vw] bg-white">
         <h1 className="text-4xl sm:text-8xl tracking-tight font-semibold text-[#1D0B3A] font-Halenior-compact-semibold">
-            <h1 className="main-text leading-[112px]">
+            <h1 className="main-text md:leading-[112px]">
               <span className="our-text">
                 <span className="text-[#7B36FF]">Innovative</span> <span></span> Design <span className='md:hidden inline'>Crafted</span>
               </span>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </h1>
         </h1>
       </div>
-      <div className="mt-24 lg:mt-56">
+      <div className="mt-24 lg:mt-56 bg-white">
         <Watchus />
       </div>
             </div>

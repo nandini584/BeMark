@@ -5,27 +5,36 @@ import Expertise from "./Pages/Expertise"
 import Culture from "./Pages/Culture"
 import Feed from "./Pages/Feed"
 import Connect from "./Pages/Connect"
-import { AnimatePresence } from "framer-motion"
 import { Routes, Route, useLocation } from "react-router-dom"
+import {useState, useEffect} from "react"
 const App = () => {
   const location = useLocation();
+  const [loading, setLoading]= useState(false)
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },3000)
+  },[])
   return (
     <>
-      <AnimatePresence>
-        <Routes location={location}>
+    {
+      loading?
+      <LoaderScreen/> : 
+      ( 
+        <div style={{ backgroundColor: "white", minHeight: "100vh" }}>
+          <Routes location={location}>
+
           <Route path="/" element={<LandingPage />} />
-          <Route
-            path="/loader"
-            element={<LoaderScreen />}
-            exit={{ scaleY: 0 }} 
-          />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/culture" element={<Culture />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/connect" element={<Connect />} />
         </Routes>
-      </AnimatePresence>
+         </div>
+      )
+    }
     </>
   );
 };

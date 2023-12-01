@@ -12,7 +12,7 @@ import CultureImg10 from "../../Images/Culture/CultureImg10.jpeg"
 const Bemaarkculture = () => {
 
   return (
-    <div className="w-[100vw] md:h-[120vh] h-[100vh] flex flex-row items-center justify-center">
+    <div className="bg-white w-[100vw] md:h-[120vh] h-[100vh] flex flex-row items-center justify-center">
         <h1 className="md:text-8xl text-4xl text-center z-0 absolute"><span className="text-[#7B36FF] font-Halenior-light">Culture at</span> <br /> <span className="text-[#c2ff00] font-Halenior-bold md:text-[150px] text-7xl">Bemaark</span></h1>
         
         

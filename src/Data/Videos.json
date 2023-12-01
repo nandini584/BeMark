@@ -1,0 +1,26 @@
+[
+    {
+      "title" : "Branding",
+      "src": "../Video/Branding.mp4"
+    },
+    {
+      "title" : "Digital Marketing",
+      "src": "../Video/Socialmedia.mp4"
+    },
+    {
+      "title" : "Product Photo and Video Shoot",
+      "src": "../Video/Production.mp4"
+    },
+    {
+      "title" : "Web Development",
+      "src": "../Video/Webdevelopment.mp4"
+    },
+    {
+      "title" : "User Research",
+      "src": "../Video/Userresearch.mp4"
+    },
+    {
+      "title" : "UI/UX Design",
+      "src": "../Video/UI_UX.mp4"
+    }
+]

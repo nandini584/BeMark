@@ -2,7 +2,7 @@ import Experience from "./Experience"
 
 const Expertise = () => {
   return (
-    <div className="flex md:flex-row flex-col md:px-[40px] px-4">
+    <div className="flex md:flex-row flex-col md:px-[40px] px-4 bg-white">
         <div className="flex flex-col mb-8 md:mb-0">
         <h1 className="md:text-8xl text-4xl md:font-Halenior-medium font-Halenior-semibold text-[#1D0B3A]">Expertise</h1>
         <div className="flex md:flex-row flex-col md:mt-24 mt-8">

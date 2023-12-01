@@ -24,7 +24,7 @@ const Parallax = () => {
           </div>
         </div>
       <video
-      className="relative md:h-[120vh] mt-32 overflow-hidden top-0 left-0 w-full bg-cover bg-center md:mt-20"
+      className="relative md:h-[120vh] w-[100vw] mt-32 overflow-hidden top-0 left-0 bg-cover bg-center md:mt-20"
         src={Video}
         autoPlay
         loop

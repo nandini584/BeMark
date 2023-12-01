@@ -4,7 +4,7 @@ import Stock3 from "../../Images/Stock3.svg"
 import {motion} from "framer-motion"
 const Mesh = () => {
   return (
-    <div>
+    <div className="">
       <div className="inline-block md:hidden mb-12">
       <div
        className="bg-hero py-16 text-white md:font-Halenior-semibold font-Halenior-medium flex flex-col items-center justify-center md:px-[60px] px-[24px]">

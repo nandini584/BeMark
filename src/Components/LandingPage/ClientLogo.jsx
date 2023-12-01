@@ -71,7 +71,7 @@ export default ClientLogo
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   color: #000000;
   position: relative;
   display: flex;

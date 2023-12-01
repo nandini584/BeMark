@@ -15,7 +15,7 @@ const TestimonialsSummary = () => {
               </div>
           </div>
           <div>
-              <h1 className="text-[#1D0B3A] font-Halenior-medium tracking-tight  leading-tight lg:mt-40 mt-20 lg:text-[34px] text-base lg:w-[35vw]">Our satisfied clients stand as living testaments to our successful collaboration and project approach.</h1>
+              <h1 className="text-[#1D0B3A] font-Halenior-medium tracking-tight leading-tight lg:mt-40 mt-12 lg:text-[34px] text-base lg:w-[35vw]">Our satisfied clients stand as living testaments to our successful collaboration and project approach.</h1>
           </div>
       </div>
     )

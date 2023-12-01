@@ -1,7 +1,8 @@
-import HorizontalScroll from "./Portfolios/portfolio";
 import styled, { createGlobalStyle } from "styled-components";
-import Line1 from "../../Images/Liner1.svg"
-import Line2 from "../../Images/Liner2.svg"
+import Line2 from "../../Images/Slice 1.svg"
+import Line1 from "../../Images/Slice 2.svg"
+import HorizontalScroll from "./Portfolios/portfolio";
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -18,55 +19,42 @@ const Main = styled.main``;
 const HorizontalSection = styled.section`
   position: relative;
   width: 100%;
-  min-height: 100vh;
 `;
 
 const CardsContainer = styled.div`
   position: relative;
-  height: 100%;
+  height: 30%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 `;
 
-// const Heading = styled.div`
-//   width: 100%;
-//   height: auto;
-// `;
-const HeadingImg = styled.img`
-  width: 1000px; 
-  height: auto;
+const PortfolioImage = styled.img`
+  width: 100%; 
+  height: 110px;
 `;
 
-const Heading = () => (
+const PortfoliosComponent = () => (
   <>
-    <HeadingImg src={Line1} alt="Billboard" />
-    <HeadingImg src={Line2} alt="Packaging" />
+    <PortfolioImage src={Line1} alt="Stationery" />
+    <PortfolioImage src={Line2} alt="Web Work" />
   </>
 );
-const Statement = () => (
-  // Add parentheses to wrap the JSX
-  <>
-    <Heading className="text-[200px] font-Halenior-bold"> A Remarkable Presence</Heading>
-  </>
+const Liner = () => (
+  <div>
+    <div className="md:block hidden">
+    <GlobalStyle />
+    <Main>
+      <HorizontalSection>
+        <HorizontalScroll>
+          <CardsContainer>
+            <PortfoliosComponent />
+          </CardsContainer>
+        </HorizontalScroll>
+      </HorizontalSection>
+    </Main>
+    </div>
+  </div>
 );
-
-const Liner = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Main>
-        <HorizontalSection>
-          <HorizontalScroll>
-            <CardsContainer>
-              <Statement />
-            </CardsContainer>
-          </HorizontalScroll>
-        </HorizontalSection>
-      </Main>
-    </>
-  );
-};
-
-export default Liner;
+export default Liner

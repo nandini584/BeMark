@@ -1,24 +1,10 @@
 import Logo from "../../Images/Logo.svg"
 import RightArrow from "../../Images/RightArrowBlack.svg"
 import TiltArrow from "../../Images/TiitArrow.svg"
-import { useEffect } from "react"
 const Footer = () => {
-    const handleMousemove = (e) => {
-        const cursor = document.querySelector('.cursor');
-        cursor.style.left = e.pageX + 'px';
-        cursor.style.top = e.pageY + 'px';
-      };
-    
-      useEffect(() => {
-        document.addEventListener('mousemove', handleMousemove);
-    
-        return () => {
-          document.removeEventListener('mousemove', handleMousemove);
-        };
-      }, []);
   return (
-    <div className="flex md:flex-row flex-col lg:px-24 px-6 lg:py-24 relative">
-        <div className="md:w-[28vw] cursormove">
+    <div className="bg-white flex md:flex-row flex-col lg:px-24 px-6 lg:py-24 relative">
+        <div className="md:w-[28vw] bg-white">
             <img src={Logo} alt="Bemaark" className="md:mb-20 mb-10 w-24 md:w-auto" />
             <h1 className="md:text-6xl text-2xl font-Halenior-bold text-[#1D0B3A] md:mb-8 mb-5">Let's Connect with BE</h1>
             <h1 className="md:text-base text-sm font-Halenior-medium md:font-Halenior-semibold text-black md:mb-8 mb-5">Feel free to reach out if you want to collaborate with us, or simply have a chat.</h1>
@@ -88,7 +74,6 @@ const Footer = () => {
             <h1 className="md:text-base text-xs font-Halenior-medium md:font-Halenior-semibold text-black md:mb-6 mb-0">Gurugram, Haryana <br />122007</h1>
             <h1 className="md:text-base text-xs font-Halenior-medium md:font-Halenior-semibold text-black md:mb-0 mb-10">Dial: +91 7003152724</h1>
         </div>
-        <div className='cursor' onMouseMove={handleMousemove}></div>
     </div>
   )
 }

@@ -53,12 +53,12 @@ const AppContainer = styled.div`
   width: 100vw;
   height: 20vh;
   color: #000000;
-
+  background: white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  margin-bottom: 112px;
 `;
 
 const Wrapper = styled.div`
@@ -66,6 +66,7 @@ const Wrapper = styled.div`
   height: fit-content;
   display: flex;
   align-items: center;
+  background: white;
   justify-content: center;
   flex-direction: column;
 `;
@@ -75,7 +76,7 @@ const Marquee = styled.div`
   width: 100vw;
   overflow: hidden;
   user-select: none;
-
+  background: white;
   mask-image: linear-gradient(
     to right,
     hsl(0 0% 0% / 0),
