@@ -13,15 +13,12 @@ const HeroSection = () => {
     t1.to('.our-text', {
       y: '0%',
       duration: 0.7,
-      stagger: 0.4,
+      stagger: 0.2,
     });
   }, []);
 
   useEffect(() => {
-    // Add an event listener for mousemove
     document.addEventListener('mousemove', handleMousemove);
-
-    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener('mousemove', handleMousemove);
     };

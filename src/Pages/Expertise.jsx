@@ -1,6 +1,15 @@
+import Navbar from "../Components/Navbar"
+import Expertisesection from "../Components/Expertise/Expertise"
+import Letscollab from "../Components/Expertise/Letscollab"
+import Footer from "../Components/LandingPage/Footer"
 const Expertise = () => {
   return (
-    <div>Expertise</div>
+    <div>
+      <Navbar/>
+      <Expertisesection/>
+      <Letscollab/>
+      <Footer/>
+    </div>
   )
 }
 

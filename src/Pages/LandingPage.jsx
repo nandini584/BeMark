@@ -39,7 +39,7 @@ const LandingPage = () => {
   }, [])
 
   return (
-    <div className="bg-white">  
+    <div className="bg-[#1D0B3A]">  
       <motion.div
       initial={{ y: "100%" }}
     animate={{ y: "0%" }}
