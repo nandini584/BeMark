@@ -13,6 +13,8 @@ export default {
         'canvas' : "url('../src/Images/Canvas.svg')",
         'billboard' : "url('../src/Images/Porfolios/Billboard.svg')",
         'packaging' : "url('../src/Images/Porfolios/Packaging.svg')",
+        'portfolio1' : "url('../src/Images/Porfolios/Portfolio1.png')",
+        'portfolio2' : "url('../src/Images/Porfolios/Portfolio2.png')",
         'printdesign' : "url('../src/Images/Porfolios/PrintDesign.svg')",
         'stationery' : "url('../src/Images/Porfolios/Stationery.svg')",
         'webwork' : "url('../src/Images/Porfolios/WebWork.svg')"

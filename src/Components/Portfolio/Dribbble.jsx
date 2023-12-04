@@ -56,21 +56,21 @@ const Dribbble = () => {
         });
       }, []); 
   return (
-    <div className='flex flex-col my-16'>
+    <div className='flex flex-col md:my-16'>
         <div className='flex flex-row items-center justify-around'>
-            <img src={Image} alt="" className='w-[40vw] img1'/>
-            <img src={Image} alt="" className='w-[40vw] img2'/>
+            <img src={Image} alt="" className='md:w-[40vw] w-[45vw] img1'/>
+            <img src={Image} alt="" className='md:w-[40vw] w-[45vw] img2'/>
         </div>
         <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-col items-center justify-center mb-8'>
-            <h1 className="font-Halenior-semibold text-5xl text-[#1D0B3A]">Our creativity doesn't end </h1>
-            <h1 className="font-Halenior-semibold text-5xl text-[#1D0B3A]">on projects only</h1>
+            <div className='flex flex-col items-center justify-center md:mb-8 mb-4'>
+            <h1 className="font-Halenior-semibold md:text-5xl text-xl text-[#1D0B3A]">Our creativity doesn't end </h1>
+            <h1 className="font-Halenior-semibold md:text-5xl text-xl text-[#1D0B3A]">on projects only</h1>
             </div>
-            <div className='border flex flex-row items-center justify-center border-black py-2 px-8 rounded-full font-Halenior-medium text-xl'>Dribbble <img src={Arrow} alt="" className='ml-4'/></div>
+            <div className='border flex flex-row items-center justify-center border-black md:py-2 py-1 md:px-8 px-4 rounded-full font-Halenior-medium md:text-xl text-sm'>Dribbble <img src={Arrow} alt="" className='ml-4 w-2'/></div>
         </div>
         <div className='flex flex-row items-center justify-around'>
-            <img src={Image} alt="" className='w-[40vw] img3'/>
-            <img src={Image} alt="" className='w-[40vw] img4'/>
+            <img src={Image} alt="" className='md:w-[40vw] w-[45vw] img3'/>
+            <img src={Image} alt="" className='md:w-[40vw] w-[45vw] img4'/>
         </div>
     </div>
   )

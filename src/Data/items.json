@@ -1,0 +1,57 @@
+[
+    {
+       "Service":"Brand Identity",
+       "item1":"Logo Design",
+       "item2":"Brand Messaging", 
+       "item3":"Visual Elements", 
+       "item4":"Stationery Design", 
+       "item5":"Marketing Collateral", 
+       "item6":"Packaging Design", 
+       "item7":"Brand Guidelines", 
+       "item8":"Brand Strategy"
+    },
+    {
+       "Service":"Digital Marketing",
+       "item1":"Search Engine Optimization (SEO)",
+       "item2":"Search Engine Marketing (SEM)", 
+       "item3":"Email Marketing", 
+       "item4":"", 
+       "item5":"Social Media Marketing (SMM)", 
+       "item6":"Content Marketing", 
+       "item7":"", 
+       "item8":""
+    },
+    {
+       "Service":"Web Development",
+       "item1":"Custom Website Development",
+       "item2":"Front-End Development", 
+       "item3":"Back-End Development", 
+       "item4":"Full-Stack Development", 
+       "item5":"E-Commerce Development", 
+       "item6":"Web Application Development", 
+       "item7":"Mobile Responsive Design", 
+       "item8":"API Development and Integration"
+    },
+    {
+        "Service":"UX & UI",
+        "item1":"User Research",
+        "item2":"User Persona Development", 
+        "item3":"Wireframing", 
+        "item4":"", 
+        "item5":"UI Design", 
+        "item6":"Usability Testing", 
+        "item7":"", 
+        "item8":""
+     },
+    {
+        "Service":"Product Photo Shoot & Video Shoot",
+        "item1":"",
+        "item2":"", 
+        "item3":"", 
+        "item4":"", 
+        "item5":"", 
+        "item6":"", 
+        "item7":"", 
+        "item8":""
+     }
+]

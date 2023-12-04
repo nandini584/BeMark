@@ -110,8 +110,6 @@ body{
 }
 
 .project-container {
-  width: 50vw;
-  height: 100vh;
   overflow: hidden;
   position: relative;
 }

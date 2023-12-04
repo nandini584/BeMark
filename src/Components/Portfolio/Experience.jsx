@@ -14,7 +14,7 @@ const Experience = () => {
             </div>
             </div>
             <div className="flex flex-row items-center md:mt-4 mt-2">
-            <h1 className="md:font-Halenior-medium font-Halenior-regular text-white md:text-base text-xs md:mr-4 mr-3 ml-[110px] md:ml-0">Discuss the project</h1>
+            <h1 className="md:font-Halenior-medium font-Halenior-regular text-white md:text-base text-xs md:mr-4 mr-3 ml-[90px] md:ml-0">Discuss the project</h1>
             <img src={RightArrow} alt="Discuss the project" className="md:w-10 w-8" />
             </div>
           </div>
