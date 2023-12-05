@@ -71,13 +71,12 @@ export default ClientLogo
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 25vh;
   color: #000000;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
 `;
 
 const Wrapper = styled.div`
@@ -131,5 +130,5 @@ const MarqueeGroup2 = styled.div`
   ${common}
   animation-direction: reverse;
   animation-delay: -3s;
-  margin-top: 2rem
+  
 `;

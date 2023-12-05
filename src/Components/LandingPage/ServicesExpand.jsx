@@ -7,7 +7,7 @@ import Userresearch from "../../Video/Userresearch.mp4"
 import UI from "../../Video/UI_UX .mp4"
 const ServicesExpand = () => {
   return (
-    <div className="flex md:flex-row flex-col bg-white md:px-[50px] px-4 md:py-28">
+    <div className="flex md:flex-row flex-col bg-white md:px-[50px] px-4 md:my-[10vh]">
         <h1 className="md:text-8xl text-4xl md:font-Halenior-medium font-Halenior-semibold text-[#1D0B3A]">Services</h1>
         <div className="flex md:flex-row flex-col md:ml-44 md:mt-0 mt-6">
             <div className="flex flex-col md:w-[25vw] md:mr-28">

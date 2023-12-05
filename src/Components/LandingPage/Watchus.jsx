@@ -5,7 +5,7 @@ import Play from "../../Images/Play.svg"
 import { useEffect, useRef } from "react"
 import gsap from 'gsap'
 import SplitType from 'split-type'
-
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 const Watchus = () => {
 
   const textRef = useRef(null);
@@ -66,20 +66,25 @@ const Watchus = () => {
     return () => {};
   });
   return (
-    <div className="flex flex-col lg:w-[28vw] bg-white">
-        <h1 className="lg:text-2xl text-base font-Halenior-medium leading-none tracking-tight main-text"><span className="our-text">Revolutionizing creativity, design, and</span> </h1 >
-         <h1 className="lg:text-2xl text-base font-Halenior-medium leading-none tracking-tight main-text"><span className="our-text"> innovation, empowering entrepreneurs with</span> </h1>
-         <h1 className="lg:text-2xl text-base font-Halenior-medium leading-none tracking-tight main-text"> <span className="our-text"> accessible, purpose-driven solutions. Join</span></h1>
-         <h1 className="lg:text-2xl text-base font-Halenior-medium leading-none tracking-tight mb-4 md:mb-8 main-text"> <span className="our-text"> us in this transformative creative journey.</span></h1>
-        <div className="flex flex-row items-center justify-between bg-white">
+    <div className="flex flex-col md:w-[26vw] bg-white">
+        <h1 className="md:text-xl text-base font-Halenior-semibold tracking-tight main-text"><span className="our-text">Revolutionizing creativity, design, and </span> </h1 >
+         <h1 className="md:text-xl text-base font-Halenior-semibold tracking-tight main-text"><span className="our-text">innovation, empowering entrepreneurs with  </span> </h1>
+         <h1 className="md:text-xl text-base font-Halenior-semibold tracking-tight main-text"> <span className="our-text">accessible, purpose-driven solutions. Join </span></h1>
+         <h1 className="md:text-xl text-base font-Halenior-semibold tracking-tight mb-4 md:mb-4 main-text"> <span className="our-text">us in this transformative creative journey.</span></h1>
+        <div className="flex flex-row items-center justify-between bg-white mt-6">
             <div className="flex flex-row items-center bg-white">
-            <img src={Amit} alt="Co-founder" className="mr-2 md:mr-3 md:w-[60px] w-[40px]"/>
-            <img src={Priya} alt="Co-founder" className="md:w-[60px] w-[40px]"/>
-            <img src={Nandini} alt="Developer" className="md:w-[60px] w-[40px] rounded-full ml-2 md:ml-3"/>
+            <img src={Amit} alt="Co-founder" className="mr-2 md:w-[60px] w-[40px]"/>
+            <img src={Priya} alt="Co-founder" className="md:w-[60px] mr-2 w-[40px]"/>
+            <img src={Nandini} alt="Developer" className="md:w-[60px] w-[40px] rounded-full"/>
             </div>
             <div className="flex flex-row items-center bg-white">
-                <h1 className="lg:text-base text-xs font-Halenior-semibold mr-2 lg:mr-4">Watch us</h1>
-                <img src={Play} alt="watch us" className="md:w-9 w-6 cursor-pointer"/>
+                <h1 className="lg:text-base text-xs font-Halenior-semibold mr-2">Watch us</h1>
+    <div className="border-black border-2 rounded-full cursor-pointer z-10 relative overflow-hidden mr-4">
+      <div className="circle" style={{ position: 'relative', width: '36px', height: '36px'}}>
+        <PlayArrowIcon style={{ color: 'black' }} className="icon z-100 hover:color-white" />
+        <div className="fill bg-black"></div>
+      </div>
+    </div>
             </div>
         </div>
         <div className="cursor" onMouseMove={handleMousemove}></div>

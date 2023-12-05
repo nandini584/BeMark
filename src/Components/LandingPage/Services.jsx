@@ -21,24 +21,24 @@ function Services() {
         <Marquee>
           <MarqueeGroup>
             {row1.map((el,i) => (
-              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-2xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row1.map((el, i) => (
-              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-2xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center mb-4 rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup>
         </Marquee>
         <Marquee>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-             <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
+             <h1 key={i} className="text-2xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
           <MarqueeGroup2>
             {row2.map((el, i) => (
-              <h1 key={i} className="text-3xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
+              <h1 key={i} className="text-2xl text-[#1D0B3A] font-Halenior-medium flex flex-col items-center justify-center rounded-full py-5">{el}</h1>
             ))}
           </MarqueeGroup2>
         </Marquee>
@@ -51,14 +51,14 @@ export default Services;
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 20vh;
   color: #000000;
   background: white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 112px;
+  margin-bottom: 40px;
+  margin-top:20px;
 `;
 
 const Wrapper = styled.div`
@@ -69,6 +69,7 @@ const Wrapper = styled.div`
   background: white;
   justify-content: center;
   flex-direction: column;
+  
 `;
 
 const Marquee = styled.div`
@@ -84,6 +85,7 @@ const Marquee = styled.div`
     hsl(0 0% 0% / 1) 90%,
     hsl(0 0% 0% / 0)
   );
+  margin-bottom:-30px;
 `;
 
 const scrollX = keyframes`

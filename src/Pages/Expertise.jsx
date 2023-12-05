@@ -7,6 +7,7 @@ import ExpertServices from "../Components/Expertise/ExpertServices"
 import ClientLogo from "../Components/LandingPage/ClientLogo"
 import Cards from "../Components/Expertise/Cards"
 import Background from "../Components/Expertise/Background"
+import Scroll from "../Components/LandingPage/Scroll"
 const Expertise = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Expertise = () => {
       <ExpertServices num={0}/>
       <Cards/>
       <ClientLogo/>
+      <Scroll/>
       <Background/>
       <Footer/>
     </div>

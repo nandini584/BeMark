@@ -10,7 +10,28 @@ import AmitImg from "../../Images/Amit.svg"
 import NandiniImg from "../../Images/Nandini.jpeg"
 import {motion} from "framer-motion"
 import DropDown from "./DropDown"
+import gsap from "gsap";
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const PlayBoard = () => {
+  useEffect(() => {
+    gsap.to(".box", {
+      scrollTrigger: {
+        trigger: ".box",
+        start: "top bottom",
+        end: "bottom center",
+        duration:0.7,
+        scrub: 0.5
+      },
+      borderRadius: "40px",
+      marginLeft: "28px",
+      marginRight: "28px",
+      ease: "expo.in",
+    });
+  }, []);
 
   return (
     <div>
@@ -82,11 +103,8 @@ const PlayBoard = () => {
       </div>
    
     <div className="hidden md:block">
-      <motion.div 
-      initial={{borderRadius:0}}
-      whileInView={{borderRadius:40, marginLeft:30, marginRight: 30}}
-      transition={{duration:1.5}}
-      className="h-[110vh] bg-[#7B36FF] flex flex-col items-center mt-20">
+      <div 
+      className="h-[110vh] box bg-[#7B36FF] flex flex-col items-center mt-20">
         <div className="relative top-32 right-[500px] w-24">
           <DropDown src={Amit} src2={AmitImg} name="Satyarishi" content="Sometimes you just have to look at <br/> the big picture, and by that, I mean <br/> the office poster that says ‘Success is <br/> a journey, not a destination.’ That’s what <br/> I tell myself every time I accidentally <br/> delete a spreadsheet."/>
         </div>
@@ -172,8 +190,10 @@ const PlayBoard = () => {
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">You can click on our comments and read them.</h1>
         <h1 className="font-Halenior-medium text-xl text-center text-white w-[50vw]">Yeah, that’s all.</h1>
         <h1 className="font-Halenior-medium text-lg text-center text-white w-[50vw] mt-10">... or explore further</h1>
-        <img src={DownArrow} alt="explore" className="mt-4 w-9" />
-    </motion.div>
+        <div className="border-2 rounded-full mt-6 hover:bounce">
+        <KeyboardArrowDownIcon style={{color:"white", fontSize:"40px"}} />
+        </div>
+    </div>
     </div>
     </div>
   )

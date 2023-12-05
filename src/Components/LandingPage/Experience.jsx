@@ -1,5 +1,6 @@
 import Priya from "../../Images/Priya.svg"
 import RightArrow from "../../Images/RightArrow.svg"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Experience = () => {
   return (
     <div className="md:w-[41vw] md:h-[54vh] h-[56vh] bg-[#1D0B3A] md:rounded-[45px] rounded-[32px] md:p-12 flex flex-col md:ml-20 mt-4 px-5 pt-8">
@@ -17,7 +18,11 @@ const Experience = () => {
             <div className="inline-block">
             <div className="flex flex-row items-center md:ml-28 md:mt-4 mt-2">
             <h1 className="md:font-Halenior-medium font-Halenior-regular text-white md:text-base text-xs md:mr-4 mr-3 ml-[110px] md:ml-0">Discuss the project</h1>
-            <img src={RightArrow} alt="Discuss the project" className="md:w-10 w-8" />
+            <div className="border-white border-2 rounded-full cursor-pointer z-10 relative overflow-hidden mr-4" >
+      <div className="circle" style={{ position: 'relative', width: '36px', height: '36px'}}>
+        <ArrowForwardIcon style={{ color: 'white' }} className="icon z-100 hover:color-purple" />
+        <div className="fill bg-white"></div>
+      </div></div>
             </div>
             </div>
           </div>

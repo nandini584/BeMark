@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import data from "../../Data/Testimonials.json"
 import RightArrowBlack from "../../Images/RightArrowBlack.svg"
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const Testimonials = () => {
   const swiperRef = useRef(null);
   const swiperRefMob = useRef(null);
@@ -84,9 +86,20 @@ const Testimonials = () => {
         
       </div>
     </div>
-      <div className="flex flex-row items-center justify-center">
-          <img src={RightArrowBlack} alt="" className="rotate-180 mr-4 w-10 mt-12" onClick={goPrev}/>
-          <img src={RightArrowBlack} alt="" className="w-10 mt-12" onClick={goNext}/>
+      <div className="flex flex-row items-center justify-center mt-12">          
+          <div className="border-black border-2 rounded-full cursor-pointer z-10 relative overflow-hidden mr-4" onClick={goPrev}>
+      <div className="circle" style={{ position: 'relative', width: '36px', height: '36px'}}>
+        <ArrowBackIcon style={{ color: 'black' }} className="icon z-100 hover:color-white" />
+        <div className="fill bg-black"></div>
+      </div>
+    </div>
+          <div className="border-black border-2 rounded-full cursor-pointer z-10 relative overflow-hidden mr-4" onClick={goNext}>
+      <div className="circle" style={{ position: 'relative', width: '36px', height: '36px'}}>
+        <ArrowForwardIcon style={{ color: 'black' }} className="icon z-100 hover:color-white" />
+        <div className="fill bg-black"></div>
+      </div>
+    </div>
+          
         </div>
       </div>
     </div>

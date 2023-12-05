@@ -20,7 +20,7 @@ const Video = () => {
         })
     },[])
   return (
-    <div className='bg-white '>
+    <div className='bg-white'>
       <video
         src={Videobg}
         className='mt-28 box w-[95vw] rounded-[45px] mx-[32px]'
