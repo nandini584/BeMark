@@ -6,49 +6,42 @@ const Scroll = () => {
         let currentScroll = window.scrollY;
         let isScrollingDown = true;
         let arrows = document.querySelectorAll(".arrow");
-    
-        let tweenForward = gsap.to(".marquee__inner", {
-          xPercent: -50,
-          repeat: -1,
-          duration: 10,
-          ease: "linear",
-        });
-    
-        let tweenReverse = gsap.to(".marquee__inner", {
-          xPercent: 50,
-          repeat: -1,
-          duration: 10,
-          ease: "linear",
+        let tween = gsap.to(".marquee__inner", {
+            xPercent: -50,
+            repeat: -1,
+            duration: 10,
+            ease: "linear",
         });
     
         window.addEventListener("scroll", function () {
-          const scrollY = window.scrollY;
+            const scrollY = window.scrollY;
     
-          if (scrollY > currentScroll) {
-            isScrollingDown = true;
-          } else {
-            isScrollingDown = false;
-          }
-    
-          const progress = (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 10;
-    
-          arrows.forEach((arrow) => {
-            if (isScrollingDown) {
-              arrow.classList.remove("active");
+            if (scrollY > currentScroll) {
+                isScrollingDown = true;
             } else {
-              arrow.classList.add("active");
+                isScrollingDown = false;
             }
-          });
     
-          if (isScrollingDown) {
-            tweenForward.progress(progress);
-          } else {
-            tweenReverse.progress(1 - progress);
-          }
+            const progress = (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 10;
     
-          currentScroll = scrollY;
+            if (isScrollingDown) {
+                tween.progress(progress);
+            } else {
+                tween.progress(1 - progress);
+            }
+    
+            arrows.forEach((arrow) => {
+                if (isScrollingDown) {
+                    arrow.classList.remove("active");
+                } else {
+                    arrow.classList.add("active");
+                }
+            });
+            tween.reverse(isScrollingDown);
+            currentScroll = scrollY;
         });
-      }, []);
+    }, []);
+    
   return (
     <div className="">
     <div className='marquee relative bg-[#1D0B3A] text-white py-7 px-0 font-Halenior-semibold text-8xl overflow-hidden'>
