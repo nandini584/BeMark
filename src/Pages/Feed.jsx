@@ -1,56 +1,44 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Feed = () => {
-  useEffect(() => {
-    let sections = gsap.utils.toArray(".panel");
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".container",
-        pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        end: () => "+=" + document.querySelector(".container").offsetWidth,
-      },
-    });
-  }, []);
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity:1,
+        scale:1,
+        transformOrigin: ['100% 0%', '100% 0%'],
+      });
+    }
+  }, [controls, inView]);
 
   return (
-    <div className="relative overflow-y-scroll h-[100%] overflow-x-hidden">
-      <div className="firstContainer flex flex-col justify-center items-center h-screen bg-yellow-300">
-        <h1>Testing horizontal scrolling w/ three sections</h1>
-        <h2>First Container</h2>
-      </div>
-
-      <div className="h-[100vh] flex flex-nowrap container">
-        <div className="description panel w-[100vw] bg-blue-400 flex items-center justify-center h-screen">
-          <div>
-            SCROLL DOWN
-            <div className="scroll-down">
-              <div className="arrow"></div>
-            </div>
-          </div>
-        </div>
-
-        <section className="panel w-[100vw] red bg-red-400 flex items-center justify-center h-screen">
-          ONE
-        </section>
-        <section className="panel w-[100vw] orange bg-orange-400 flex items-center justify-center h-screen">
-          TWO
-        </section>
-        <section className="panel w-[100vw] purple bg-purple-400 flex items-center justify-center h-screen">
-          THREE
-        </section>
-      </div>
-
-      <div className="lastContainer flex items-center justify-center h-screen bg-yellow-300">
-        Last Container
-      </div>
+    <div className="flex flex-col items-center justify-center">
+      <div className='h-[140vh] bg-yellow-200 w-[100vw] mb-20'></div>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, scale: 0}} // Initial state before in view
+        transition={{
+          ease: 'linear',
+          duration: 0.6,
+        }}
+        animate={controls}
+        className='box w-[25vw] h-[40vh] bg-pink-400 rounded-xl flex flex-col items-center justify-center'
+      >
+         <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="z-100"
+        >
+          Your Text Here
+        </motion.div>
+      </motion.div>
+      <div className='h-[140vh] bg-yellow-200 w-[100vw] mt-20'></div>
     </div>
   );
 };

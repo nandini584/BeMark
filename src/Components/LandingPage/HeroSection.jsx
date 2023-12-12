@@ -27,18 +27,18 @@ const HeroSection = () => {
   return (
     <div className="bg-white">
           <div className="cursormove flex flex-col justify-between sm:flex-row px-4 sm:px-[40px] pt-6 relative bg-white">
-      <div className="w-full sm:w-[55vw] bg-white">
-        <h1 className="text-4xl sm:text-8xl tracking-tight font-semibold text-[#1D0B3A] font-Halenior-compact-bold">
-            <h1 className="main-text md:leading-[112px]">
-              <span className="our-text">
-                <span className="text-[#1D0B3A]">Innovative</span> <span></span><span className='text-[#7B36FF]'>Design</span> <span className='md:hidden inline'>Crafted</span>
+      <div className="w-full sm:w-[65vw] bg-white">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl tracking-tight font-semibold text-[#1D0B3A] font-Halenior-compact-bold">
+            <h1 className="main-text md:text-6xl lg:text-8xl">
+              <span className="our-text leading-[1.12]">
+                <span className="text-[#1D0B3A]">Innovative</span> <span></span><span className='text-[#7B36FF] '>Design</span> <span className='lg:hidden inline'>Crafted</span>
               </span>
             </h1>
-            <h1 className="main-text">
-              <span className="our-text"><span className="hidden md:inline">Crafted </span><span className='text-[#7B36FF]'>Experience</span> </span>
+            <h1 className="main-text md:text-6xl lg:text-8xl">
+              <span className="our-text leading-[1.12]"><span className="hidden lg:inline">Crafted </span><span className='text-[#7B36FF]'>Experience</span> </span>
             </h1>
-            <h1 className="main-text">
-              <span className="our-text">
+            <h1 className="main-text md:text-6xl lg:text-8xl">
+              <span className="our-text leading-[1.12]">
                 & <span className="text-[#7B36FF]">Transform</span>
               </span>
             </h1>

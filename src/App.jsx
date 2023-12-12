@@ -7,6 +7,7 @@ import Feed from "./Pages/Feed"
 import Connect from "./Pages/Connect"
 import { Routes, Route, useLocation } from "react-router-dom"
 import {useState, useEffect} from "react"
+import Portfolioitem from "./Pages/Portfolioitem"
 const App = () => {
   const location = useLocation();
   const [loading, setLoading]= useState(false)
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/culture" element={<Culture />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/connect" element={<Connect />} />
+          <Route path="/portfolio/item" element={<Portfolioitem />} />
         </Routes>
          </div>
       )

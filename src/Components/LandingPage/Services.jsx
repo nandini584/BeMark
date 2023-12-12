@@ -5,14 +5,16 @@ function Services() {
     "Brand Identity Design",
     "User Interface Design",
     "Digital Marketing Services",
-    "Web Development"
+    "Web Development",
+    "Brand Identity Design"
   ];
 
   const row2 = [
     "User Experience Design",
     "Product Photoshoot",
     "Product Video shoot",
-    "User Research"
+    "User Research",
+    "User Experience Design",
   ];
 
   return (
@@ -58,7 +60,7 @@ const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  margin-top:20px;
+  margin-top:36px;
 `;
 
 const Wrapper = styled.div`
